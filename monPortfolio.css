@@ -1,0 +1,476 @@
+
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+
+header{
+ background-color: black;
+ justify-items: center;
+ padding: 10px;
+ position: fixed;
+ width: 100%;
+ z-index: 100 ;
+
+}
+
+.header{
+   display: flex;
+   color: white;
+   gap: 400px;
+}
+
+nav ul{
+    display: flex;
+    gap:40px;
+    list-style-type: none;
+}
+
+.nomPrenom{
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+strong{
+    color:turquoise;
+}
+
+span{
+    color:brown;
+    font-weight: bolder;
+}
+
+header .nomPrenom{
+    font-size: 150%;
+    font-weight: bold;
+}
+
+a{
+    color: white;
+    text-decoration:none;
+}
+
+.header a:hover{
+    color: turquoise;
+}
+
+.nomPrenom:hover{
+    color:turquoise;
+}
+
+.nomPrenom span:hover{
+    color:white;
+}
+
+/*****************************Section Accueil*********************/
+.accueil {
+    justify-content:center;
+    align-items: center;
+    padding: 100px;
+    background-color: lightblue;
+
+}
+
+.accueil .contenu{
+    padding:40px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:5px;
+}
+
+.accueil .text{
+    justify-items: center;
+    text-align: center;
+    font-size: 120%;
+    width: 100%;
+
+}
+
+#img1{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Définition de l'ombre portée */
+}
+
+#img1:hover {
+    transform: scale(1.04);
+    transition: transform 0.3s ease;
+  }
+
+
+p{
+    font: 2em sans-serif;
+}
+
+button {
+    background-color: turquoise;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    max-width: 100%;
+    font: 1.5em sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(2px); /* effet de déplacement vers le bas */
+}
+
+
+/********************************SECTION A PROPOS**********************************/
+
+.about{
+    background-color:#f4f3f8;
+    padding: 100px;
+}
+.about .contenu{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.about .text{
+    width: 65%;
+    text-align: center;
+    font-size: 90%;
+}
+
+h1{
+    text-align: center;
+    color:turquoise;
+    margin-bottom: 20px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400 bolder;
+    font-style: normal;
+}
+
+#img2{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid turquoise;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Définition de l'ombre portée */
+}
+
+#img2:hover {
+    transform: scale(1.04);
+    transition: transform 0.3s ease;
+  }
+.about .btn{
+    padding-top: 30px;
+}
+.btn2{
+    background-color: turquoise;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    max-width: 100%;
+    font: 1.5em sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn2:hover{
+    background-color: lightseagreen;
+}
+
+.about .btn{
+    text-align: center;
+}
+
+
+/*****************scetion projet***************/
+
+.projets{
+    padding: 100px;
+    background-color: lightblue;
+}
+
+.projets h1{
+    color:brown;
+}
+
+.projets .contenu{
+    display:flex;
+    gap:30px;
+   
+}
+
+.block{
+    border: 0px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: #f4f3f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/************************Section competences************/
+.competences{
+    background-color:  #f4f3f8;
+    height: 100vh;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    
+}
+
+.competences-titre{
+    color:black;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.competences .contenu{
+    display: flex;
+    gap: 60px; ;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.competences .contenu .block{
+   background-color: white;
+   width: 500px;
+   border-radius: 5px;
+   padding: 20px;
+   background-color: lightblue;
+}
+
+.competences ul{
+    width: 100%;
+    list-style-type: none;
+}
+
+.competences ul li{
+    margin: 10px 1px;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+.competences ul li span{
+    color:black;
+	font-weight:300;
+}
+
+.competences .pourcentage{
+    background-color:#f4f3f8;
+    width:400px;
+	height:6px;
+    display:block;
+    margin-top:5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.competences .pourcentage div{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background:brown;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+/* Effet au survol*/ 
+li:hover .pourcentage div {
+    background-color: #2ebf91;
+    width: calc(100% - 5%);
+  }
+  
+  li:hover .text {
+    color: #2ebf91;
+    transition: color 0.4s ease;
+  }
+  
+  /* Animation au survol du bloc */
+  .block:hover {
+    transform: scale(1.04);
+    transition: transform 0.3s ease;
+  }
+  
+
+/*************section contact************************/
+
+.contact {
+    background-color: black;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact .contenu {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-titre {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-titre span {
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nomPrenom {
+    display: flex;
+    gap: 30px;
+}
+
+.nomPrenom div {
+    flex: 1;
+}
+
+label {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    max-width: 30%;
+    
+}
+
+button:hover {
+    background-color: lightseagreen;
+}
+
+
+.error-message {
+    color: #f44336;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  input, textarea {
+    transition: border-color 0.3s ease;
+  }
+  
+
+
+/******************footer***************/
+
+footer{
+    background-color:lightblue;
+}
+footer div{
+    display:flex;
+    gap: 800px;
+    margin-left: 10px;
+    font-size: 80%;
+}
+
+
+
+
+/**************responsivité du site*/
+
+/*****Ajoutez des @mediarequêtes pour ajuster le style selon les différentes tailles d'écran.*/
+
+/* Pour les tablettes */
+@media (max-width: 768px) {
+    .header {
+        gap: 50px;
+    }
+    nav ul {
+        gap: 20px;
+    }
+    .accueil .contenu, 
+    .about .contenu,
+    .projets .contenu,
+    .competences .contenu {
+        flex-direction: column;
+        text-align: center;
+    }
+    #img1, #img2 {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Pour les mobiles */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .accueil {
+        padding: 40px;
+    }
+    .accueil .contenu {
+        gap: 20px;
+    }
+    #img1, #img2 {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/*****Assurez-vous que les images s'adaptent aux différentes tailles d'écran*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*****Lorsque les éléments sont empilés verticalement sur les petits écrans*/
+/*
+.accueil .contenu,
+.about .contenu,
+.projets .contenu,
+.competences .contenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+*/
