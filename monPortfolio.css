@@ -1,8 +1,9 @@
 
-body{
+*{
     margin:0px;
     padding: 0px;
     font-family: Arial, sans-serif;
+    line-height: 1.6; /* Amélioration de la lisibilité */
 }
 
 header{
@@ -17,19 +18,22 @@ header{
 
 .header{
    display: flex;
+   justify-content: space-between; /* Utilisation de space-between pour une meilleure répartition */
+   align-items: center;
+   padding: 0 20px; /* Ajout de padding pour les bords */
    color: white;
    gap: 400px;
 }
 
 nav ul{
     display: flex;
-    gap:40px;
+    gap:20px;
     list-style-type: none;
 }
 
 .nomPrenom{
-    margin-top: 15px;
     font-weight: bolder;
+    font-size: 1.2em; /* Utilisation d'unités relatives */
 }
 
 strong{
@@ -51,17 +55,14 @@ a{
     text-decoration:none;
 }
 
-.header a:hover{
+.header a:hover, .nomPrenom:hover, .nomPrenom span:hover {
     color: turquoise;
 }
 
-.nomPrenom:hover{
-    color:turquoise;
-}
-
-.nomPrenom span:hover{
+.nomPrenom strong:hover{
     color:white;
 }
+
 
 /*****************************Section Accueil*********************/
 .accueil {
@@ -69,7 +70,7 @@ a{
     align-items: center;
     padding: 100px;
     background-color: lightblue;
-
+    height: 600px;
 }
 
 .accueil .contenu{
@@ -120,6 +121,10 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.accueil button{
+    margin-top: 20px;
+}
+
 button:active {
     transform: translateY(2px); /* effet de déplacement vers le bas */
 }
@@ -129,16 +134,16 @@ button:active {
 
 .about{
     background-color:#f4f3f8;
-    padding: 100px;
+    padding: 50px;
+    height: 600px;
 }
 .about .contenu{
     display: flex;
-    gap:20px;
+    gap:80px;
     align-items: center;
 }
 .about .text{
-    width: 65%;
-    text-align: center;
+    width: 55%;
     font-size: 90%;
 }
 
@@ -146,6 +151,7 @@ h1{
     text-align: center;
     color:turquoise;
     margin-bottom: 20px;
+    margin-top: 20px;
     font-family: "Boldonse", system-ui;
     font-weight: 400 bolder;
     font-style: normal;
@@ -164,9 +170,11 @@ h1{
     transform: scale(1.04);
     transition: transform 0.3s ease;
   }
+
 .about .btn{
-    padding-top: 30px;
+    margin-top: 50px;
 }
+
 .btn2{
     background-color: turquoise;
     color: white;
@@ -184,16 +192,14 @@ h1{
     background-color: lightseagreen;
 }
 
-.about .btn{
-    text-align: center;
-}
 
 
 /*****************scetion projet***************/
 
 .projets{
-    padding: 100px;
+    padding: 60px;
     background-color: lightblue;
+    height: 600px;
 }
 
 .projets h1{
@@ -203,13 +209,22 @@ h1{
 .projets .contenu{
     display:flex;
     gap:30px;
-   
+    margin-top: 60px;
+}
+
+.projets p{
+    font-size: 120%;
+    padding: 20px;
+}
+
+.projets button{
+    padding: 10px;
 }
 
 .block{
     border: 0px;
     text-align: center;
-    padding-bottom: 5px;
+    padding: 10px;
     border-radius: 5px;
     background-color: #f4f3f8;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -306,7 +321,8 @@ li:hover .pourcentage div {
 
 .contact {
     background-color: black;
-    padding: 40px 20px;
+    padding: 60px 20px;
+    height: 600px;
     text-align: center;
     color: white;
 }
@@ -364,7 +380,8 @@ textarea {
 .contact button {
     color: white;
     padding: 10px 20px;
-    border: none;
+    margin-top: 20px;
+    border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -395,82 +412,9 @@ footer{
 }
 footer div{
     display:flex;
-    gap: 800px;
+    gap: 750px;
     margin-left: 10px;
     font-size: 80%;
+    padding: 5px;
 }
 
-
-
-
-/**************responsivité du site*/
-
-/*****Ajoutez des @mediarequêtes pour ajuster le style selon les différentes tailles d'écran.*/
-
-/* Pour les tablettes */
-@media (max-width: 768px) {
-    .header {
-        gap: 50px;
-    }
-    nav ul {
-        gap: 20px;
-    }
-    .accueil .contenu, 
-    .about .contenu,
-    .projets .contenu,
-    .competences .contenu {
-        flex-direction: column;
-        text-align: center;
-    }
-    #img1, #img2 {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-/* Pour les mobiles */
-@media (max-width: 480px) {
-    .header {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .accueil {
-        padding: 40px;
-    }
-    .accueil .contenu {
-        gap: 20px;
-    }
-    #img1, #img2 {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-/*****Assurez-vous que les images s'adaptent aux différentes tailles d'écran*/
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/*****Lorsque les éléments sont empilés verticalement sur les petits écrans*/
-/*
-.accueil .contenu,
-.about .contenu,
-.projets .contenu,
-.competences .contenu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-*/
