@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Boldonse&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./monPortfolio.css">
+   <link rel="stylesheet" href="./monPortfolio.css">
 </head>
 <body>
     <header>
         <div class="header">
-            <div class="nomPrenom">OUEDRAOGO <strong>Issiaka</strong> </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li> <a href="#accueil">Accueil</a> </li>
-                        <li> <a href="#about">A Propos</a> </li>
-                        <li> <a href="#projets">Projets</a> </li>
-                        <li> <a href="#competences">Compétences</a> </li>
-                        <li> <a href="#contact">Contact</a> </li>
-                    </ul>
-                </nav>
-            </div>       
+            <div class="nomPrenom">OUEDRAOGO <strong>Issiaka</strong></div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#about">A Propos</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -32,21 +34,21 @@
                 <p>Je suis <span>Issiaka</span>, Développeur en devenir<br> passionné par le web et le design!</p>
                 <div class="btn"><button class="btn1"><a href="#projets">Voir mes projets</a></button></div> 
             </div>
-                <img src="./fichiers/image1.svg" alt="image" id="img1">
+            <img src="./fichiers/image1.svg" alt="image" id="img1">
         </div>
     </section>
 
     <section class="about" id="about">
         <h1>A propos</h1>
         <div class="contenu">
-            <div  class="text">
+            <div class="text">
                 <div>
-                    <p>Je m'appelle <span>OUEDRAOGO Issiaka</span>, passionné par la création des sites web modernes et interactifs</p><br>
-                    <p>Je suis actuellement étudiant en <span>developpement web</span>, et je cherche à ameliorer mes compétences en Javascript, Html et CSS.</p><br>
+                    <p>Je m'appelle <span>OUEDRAOGO Issiaka</span>, passionné par la création des sites web modernes et interactifs</p>
+                    <p>Je suis actuellement étudiant en <span>developpement web</span>, et je cherche à ameliorer mes compétences en Javascript, Html et CSS.</p>
                     <P>J'adore transformer mes idées en projets concrets et experimenter avec les nouvelles technologies.</P>
                 </div>
                 <div class="btn">
-                    <a class="btn2" href="./fichiers/CV_OUEDRAOGO_Issiaka.pdf" download >Télécharger mon CV</a>
+                    <a class="btn2" href="./fichiers/CV_OUEDRAOGO_Issiaka.pdf" download>Télécharger mon CV</a>
                 </div>
             </div>  
             <div class="img2">
@@ -56,7 +58,7 @@
     </section>
 
     <section class="projets" id="projets">
-        <h1>Projets</h1><br><br>
+        <h1>Projets</h1>
         <div class="contenu">
             <div class="block">
                 <p>un mini-jeu interactif en JavaScript qui utilise des évènemùents DOM</p>
@@ -74,7 +76,7 @@
             </div>
             <div class="block">
                 <p>un mini-jeu interactif en JavaScript qui utilise des évènemùents DOM</p>
-                <div >
+                <div>
                     <p>#html, #css, #js</p>
                     <button class="btn3">Voir</button>
                 </div>
@@ -115,7 +117,7 @@
                     <li>
                         <span class="text">HTML</span>
                         <span class="pourcentage">
-                            <div style="width:95%"></div>
+                            <div style="width: 95%;"></div>
                         </span>
                     </li>
                     <li>
@@ -123,7 +125,6 @@
                         <span class="pourcentage">
                             <div style="width:90%"></div>
                         </span>
-
                     </li>
                     <li>
                         <span class="text">JavaScript</span>
@@ -162,7 +163,6 @@
                     <textarea name="message" id="message" placeholder="Écrivez votre message ici !"></textarea>
                     <button type="submit" onclick="validationFormulaire(event)">Envoyer</button>
                 </div>
-    
             </form>
         </div>
     </section>
@@ -173,7 +173,6 @@
             <div><p>Tous droits réservés - 2025</p></div>
         </div>
     </footer>
-    
     <script src="./monPortfolio.js"></script>
 </body>
 </html>

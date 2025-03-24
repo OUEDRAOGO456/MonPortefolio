@@ -1,21 +1,40 @@
-/*
-function validationFormulaire() {
-    const prenomValue=document.formulaireContact.prenom.value;
-    const nomValue=document.formulaireContact.nom.value;
-    const objetValue=document.formulaireContact.sujet.value;
-    const messageValue= document.formulaireContact.message.value;
 
-    if(prenomValue==="" || nomValue==="" || objetValue==="" || messageValue===""){
-        alert("Vous devez remplir tous les champs du formulaire!");
-    }
-    else{
-        alert("Message envoyés avec succès !");
-        document.formulaireContact.submit(); // Soumission du formulaire
-    }
-}
-*/
+        // Menu mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
 
-function validationFormulaire(event) {
+        // Fermer le menu lorsqu'un lien est cliqué
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // Animation au scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Validation du formulaire
+        function validationFormulaire(event) {
     event.preventDefault(); // Empêche l'envoi du formulaire par défaut
   
     // Récupération des champs
@@ -80,8 +99,3 @@ function validationFormulaire(event) {
       document.formulaireContact.submit(); // Soumission du formulaire
     }
   }
-  
-
-  /************************section competance**************** */
-
-  
