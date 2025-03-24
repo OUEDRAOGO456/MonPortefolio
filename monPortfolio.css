@@ -157,11 +157,14 @@
         max-width: 100%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         transition: all 0.3s ease;
+        font-weight: bolder;
     }
 
-    .accueil button {
+    .accueil .btn{
+        text-align: center;
         margin-top: 20px;
     }
+   
 
     button:active {
         transform: translateY(2px);
@@ -174,16 +177,12 @@
         align-items: center;
     }
 
-    .about h1{
-        margin-top: -20px;
-    }
 
     .about .contenu {
         display: flex;
         flex-direction: column;
-        gap: 120px;
-        align-items: center;
-        
+        gap: 150px;
+        align-items: center;  
     }
 
     .about .text {
@@ -197,7 +196,7 @@
     }
 
     .about .text div p{
-       font-size: 2em;
+       font-size: 1.8em;
     }
 
     #img2 {
@@ -228,6 +227,7 @@
         cursor: pointer;
         font-size: clamp(0.9rem, 2vw, 1.2rem);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        font-weight: bolder;
     }
 
     .btn2:hover {
@@ -241,22 +241,31 @@
         display: flex;
         flex-direction:column;
         justify-content: center;
+        padding: 40px 20px;
     }
 
     .projets h1 {
         color: brown;
+        margin-bottom: 40px;
     }
 
     .projets .contenu {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     .projets p {
         font-size: clamp(1rem, 3vw, 1.2rem);
         padding: 15px;
+    }
+
+    .projets .block{
+        width: calc(33.333% - 20px); /* 3 colonnes avec espacement */
+        min-width: 250px; 
     }
 
     .block {
@@ -293,15 +302,19 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: flex-start;
         gap: 40px;
         padding: 20px; 
+        max-width: 1200px;
+        margin: 0 auto;
         flex-wrap: wrap;
     }
 
     .competences .contenu .block {
         background-color: lightblue;
-        width: calc(50% - 20px); /* 50% moins la moitié du gap */
-        min-width: 300px; /* Largeur minimale */
+        flex: 1; 
+        min-width: 450px; 
+        max-width: calc(50% - 20px); 
         border-radius: 5px;
         padding: 20px;
         box-sizing: border-box;
@@ -460,6 +473,7 @@
         .about .contenu {
             flex-direction: row;
         }
+
         .about .contenu{
             flex-direction: row;
         }
@@ -481,11 +495,11 @@
 
         .competences .contenu {
             flex-direction: row;
-            flex-wrap: wrap;
         }
-
+        
         .competences .contenu .block {
-            width: 100%;
+            
+            width: calc(50% - 20px); 
         }
 
         .nomPrenom {
@@ -503,6 +517,26 @@
             justify-content: space-between;
             max-width: 1200px;
             margin: 0 auto;
+        }
+    }
+/* Version mobile seulement */
+    @media (max-width: 767px) {
+        
+        .competences .contenu {
+            flex-direction: column;
+        }
+        .competences .contenu .block {
+            width: 100%;
+        }
+
+        .projets .contenu {
+            flex-direction: column; 
+            align-items: center;
+        }
+        
+        .projets .block {
+            width: 100%; /* Pleine largeur */
+            max-width: 350px; /* Limite la largeur max */
         }
     }
 
