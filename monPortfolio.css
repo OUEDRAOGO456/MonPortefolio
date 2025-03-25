@@ -557,8 +557,11 @@
             gap: 20px;
          }
 
+    
          .footer-text p{
             font-size: 1em;
+            min-width: 100px;
+            max-width: 350px;
          }
     }
 
