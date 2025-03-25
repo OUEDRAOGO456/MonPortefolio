@@ -192,11 +192,11 @@
     }
 
     .about .text div {
-       width: 120%;
+       width: 100%;
     }
 
     .about .text div p{
-       font-size: 1.8em;
+       font-size: 1.3em;
     }
 
     #img2 {
@@ -313,7 +313,7 @@
     .competences .contenu .block {
         background-color: lightblue;
         flex: 1; 
-        min-width: 450px; 
+        min-width: 300px; 
         max-width: calc(50% - 20px); 
         border-radius: 5px;
         padding: 20px;
