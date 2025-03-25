@@ -527,6 +527,7 @@
         }
         .competences .contenu .block {
             width: 100%;
+            max-width: 350px;
         }
 
         .projets .contenu {
@@ -538,6 +539,19 @@
             width: 100%; /* Pleine largeur */
             max-width: 350px; /* Limite la largeur max */
         }
+
+        .about .text div {
+            width: 100%;
+            max-width: 350px;
+         }
+     
+         .about .text div p{
+            font-size: 1em;
+         }
+
+         .about .contenu{
+            gap: 20px;
+         }
     }
 
     @media (max-width: 768px) {
