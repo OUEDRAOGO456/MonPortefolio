@@ -455,9 +455,13 @@
         flex-direction: column;
         gap: 10px;
         padding: 0 20px;
-        font-size: clamp(0.7rem, 2vw, 0.8rem);
+        font-size: clamp(0.7rem, 2vw, 0.4rem);
         text-align: center;
     }
+
+    .footer-text p{
+        font-size: 2.4em;
+     }
 
     /* Media Queries */
     @media (min-width: 768px) {
@@ -551,6 +555,10 @@
 
          .about .contenu{
             gap: 20px;
+         }
+
+         .footer-text p{
+            font-size: 1.2em;
          }
     }
 
